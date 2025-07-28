@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music-Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1817b03beb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img src="media/21Cover.png" alt="21savageAlbCover" class="song-img" />
+        <h1>A lot</h1>
+        <p>21 Savage ft. J. Cole</p>
+
+        <audio controls id="song">
+          <source
+            src="media/21 Savage - a lot (Official Video) ft. J. Cole.m4a"
+            type="audio/mpeg"
+          />
+        </audio>
+        <input type="range" value="0" id="progress" title="audio" />
+
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          </div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="Practicescript.js"></script>
+  </body>
+</html>
