@@ -31,5 +31,5 @@ progress.onchange = function (){
      song.currentTime = progress.value;
         ctrlIcon.classList.remove('fa-play');
         ctrlIcon.classList.add('fa-pause');
-}
+};
 
