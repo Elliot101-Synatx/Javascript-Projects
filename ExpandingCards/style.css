@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+};
+
+body{
+    font-family: "Muli", sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    width: 98vw;
+    display: flex;
+}
+
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3{
+    flex: 5;
+}
+
+@media(max-width: 480px){
+    .container{
+        width: 100vw;
+    }
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3 ease-in 0.4s;
+}
+
+
+
+/*Background Images*/
+.explore{
+    background-image: url(images/hawaii.png);
+}
+
+.forest{
+    background: url(images/forest.png);
+}
+
+.sunrise{
+    background: url(images/sunrise.png);
+}
+
+.mountains{
+    background: url(images/Mountains.png);
+}
+
+.waterfall{
+    background: url(images/waterfall.png);
+}
